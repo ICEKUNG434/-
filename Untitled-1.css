@@ -1,0 +1,53 @@
+body {
+  font-family: 'Kanit', sans-serif;
+  background-color: #f9f9f9;
+}
+
+/* Hero Section */
+.hero-section {
+  background: linear-gradient(
+      rgba(0, 0, 0, 0.3),
+      rgba(0, 0, 0, 0.3)
+    ),
+    url('../img/football1.jpg') no-repeat center center/cover;
+  color: white;
+  padding: 3rem 0;
+}
+
+/* Carousel rounded corners */
+.carousel-inner {
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* Title fade-in animation */
+h2 {
+  animation: fadeInUp 1.5s ease-out;
+}
+
+/* Animation keyframes */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Style สำหรับ block console */
+pre {
+  background-color: #272822;
+  color: #f8f8f2;
+  padding: 1rem;
+  border-radius: 8px;
+  font-family: 'Courier New', Courier, monospace;
+  white-space: pre-wrap; /* เพื่อให้ข้อความขึ้นบรรทัดใหม่ถ้ายาว */
+}
+
+#main-content {
+  display: none;
+}
